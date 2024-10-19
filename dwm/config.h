@@ -30,7 +30,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class                instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
-	{ "TelegramDesktop",    NULL,     NULL,           0,         1,          0,           0,        -1 },
+	{ "TelegramDesktop",    NULL,     NULL,           0,         0,          0,           0,        -1 },
 	{ "obs",                NULL,     NULL,           0,         1,          0,           0,        -1 },
 	{ "Lutris",             NULL,     NULL,           0,         1,          0,           0,        -1 },
 	{ "firefox",   		NULL,     NULL,    	  0,   	     0,          0,          -1,        -1 },
