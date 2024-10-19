@@ -1,1 +1,18 @@
-# dotfiles
+# .xinitrc
+![xinitrc](https://cdn.discordapp.com/attachments/1287597164436000898/1297214782549659658/xinitrc-example.png?ex=67151ce9&is=6713cb69&hm=cbb4910aedd2942a7e0ba66aa229ab0866e38cfe2443d9af986fcbe09a3e0d44&)
+
+Lo más relevante de este .xinitrc son las líneas para establecer el wallpaper y el colorscheme:
+
+```
+# wallpaper
+xwallpaper --zoom 'Imágenes/wallpaper3.png'
+wal -i 'Imágenes/wallpaper3.png'
+```
+
+Se necesita ``` sudo pacman -S xwallpaper ``` y ``` sudo pacman -S python-pywal ``` para que funcione.
+
+**xwallpaper** sirve para establecer una imágen como wallpaper y cuenta con algunas configuraciones. **python-pywal/wal -i** es para establecer el colorscheme en base a una imágen.
+
+Hay formas de automatizar esto, pero soy muy flojo para hacerlo y mi configuración funciona sin problemas.
+
+
