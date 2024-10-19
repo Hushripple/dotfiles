@@ -106,3 +106,28 @@ Para agregar los scripts a dwmblocks, se debe editar el archivo **config.h** que
 Como se puede ver en la imágen, es bastante intuitivo y muy fácil de setear. 
 
 Finalmente, se debe hacer un ``` sudo make clean install ```. Si los cambios no se muestran, probablemente sea necesario matar el proceso con ```pkill dwmblocks``` y volver a ejecutarlo mediante ```dwmblocks &``` o reiniciando el sistema.
+
+# .vimrc
+
+
+.vimrc es el archivo de configuración para vim. Dentro de él se encuentran una serie de instrucciones y configuraciones comentadas para que vim funcione un poco mejor. Ya que sólo lo utilizo para .configs y archivos simples ocasionalmente, no tiene plugins tan avanzados, aunque se planea transformar en un IDE completamente funcional en el futuro.
+
+Se deben crear esta serie de carpetas en el home. Además, este archivo .vimrc también debe estar en el home.
+
+``` 
+mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
+```
+
+Todas estas configuraciones fueron sacadas de ![acá](https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/)
+
+No hay mucho que decir sobre esto, está comentado (en inglés) lo que hace cada configuración. 
+
+Lo más relevante que podría decir es que utiliza NERDTree con vim dev-icons, y para que estos iconos se vean bien es necesario establecer una fuente que soporte iconos. En mi caso utilizo ![ttf-jetbrains-mono-nerd](https://archlinux.org/packages/extra/any/ttf-jetbrains-mono-nerd/)
+
+Para establecer esta fuente, hay que editar el **config.h** de st (la terminal que utilizo) y hacer:
+
+```
+static char *font = "JetBrainsMono Nerd Font:pixelsize=15:antialias=true:au
+``` 
+
+![vimrc](https://cdn.discordapp.com/attachments/1287597164436000898/1297232391101878282/vimrc-example.png?ex=67152d4f&is=6713dbcf&hm=56472a2345b078ea23d071fda4e380e953ad497105cf7cf822b8f5452e5d51ed&)
