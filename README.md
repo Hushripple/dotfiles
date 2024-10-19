@@ -4,7 +4,6 @@
 Lo más relevante de este .xinitrc son las líneas para establecer el wallpaper y el colorscheme, y lo que se debe ejecutar:
 
 ```
-# wallpaper
 xwallpaper --zoom 'Imágenes/wallpaper3.png'
 wal -i 'Imágenes/wallpaper3.png'
 ```
@@ -12,6 +11,10 @@ wal -i 'Imágenes/wallpaper3.png'
 Se necesita ``` sudo pacman -S xwallpaper ``` y ``` sudo pacman -S python-pywal ``` para que funcione.
 
 **xwallpaper** sirve para establecer una imágen como wallpaper y cuenta con algunas configuraciones. **python-pywal/wal -i** es para establecer el colorscheme en base a una imágen.
+
+Si el colorscheme no se está guardando correctamente luego de hacer ``` source .xinitrc ```, es probable que sea problema del caché de pywal. En ese caso hacer ``` rm -rf .cache/wal ``` para eliminar la caché. 
+
+Finalmente apretar **MODKEY + F5** para que se aplique correctamente el colorscheme.
 
 Hay formas de automatizar esto, pero soy muy flojo para hacerlo y mi configuración funciona sin problemas.
 
@@ -24,3 +27,5 @@ exec dwm
 ```
 
 Se necesita ``` sudo pacman -S xcompmgr ``` para darle el efecto de transparencia a la terminal (st con ohmyzsh)
+
+Ya que utilizo dwm, al final de todo el archivo se debe hacer ```exec dwm```
