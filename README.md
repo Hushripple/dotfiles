@@ -1,7 +1,7 @@
 # .xinitrc
 ![xinitrc](https://cdn.discordapp.com/attachments/1287597164436000898/1297214782549659658/xinitrc-example.png?ex=67151ce9&is=6713cb69&hm=cbb4910aedd2942a7e0ba66aa229ab0866e38cfe2443d9af986fcbe09a3e0d44&)
 
-Lo más relevante de este .xinitrc son las líneas para establecer el wallpaper y el colorscheme:
+Lo más relevante de este .xinitrc son las líneas para establecer el wallpaper y el colorscheme, y lo que se debe ejecutar:
 
 ```
 # wallpaper
@@ -15,4 +15,12 @@ Se necesita ``` sudo pacman -S xwallpaper ``` y ``` sudo pacman -S python-pywal 
 
 Hay formas de automatizar esto, pero soy muy flojo para hacerlo y mi configuración funciona sin problemas.
 
+Los programas que se ejecutan en el .xinitrc son los siguientes:
 
+```
+dwmblocks &
+xcompmgr &
+exec dwm
+```
+
+Se necesita ``` sudo pacman -S xcompmgr ``` para darle el efecto de transparencia a la terminal (st con ohmyzsh)
