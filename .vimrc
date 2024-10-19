@@ -19,14 +19,14 @@ set number
 " Use highlighting when doing a search.
 set hlsearch
 
-" Abrir NERDTree automáticamente si no se especifican archivos o directorios
+" Open NERDTree automatically if no files or directories are specified.
 autocmd vimenter * NERDTree | wincmd p
 
-" Evitar que se abra NERDTree si abres un archivo directamente
+" Prevent NERDTree from opening if a file is opened directly.
 autocmd StdinReadPre * let s:std_in=1
 
-" Cerrar Vim si NERDTree es el único buffer restante
-autocmd bufenter * if (winnr("$") == 1 && bufname() == "NERD_tree_1") | q | endif
+" Close vim if NERDTree is the only buffer remaining.
+autocmd bufenter * if (winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree()) | quit | endif
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
