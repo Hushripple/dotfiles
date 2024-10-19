@@ -58,7 +58,21 @@ vim battery
 
 ![dwmblocks2](https://cdn.discordapp.com/attachments/1287597164436000898/1297206008673861743/bin-example.png?ex=671514bd&is=6713c33d&hm=44688874291f62e4b9d0221dd2ab22d2bb69a2eb3f7d2db0031e503f2b3d07fb&)
 
+Un paso necesario e importante para su correcto funcionamiento es hacer que el sistema pueda encontrar, reconocer y ejecutar estos scripts desde cualquier parte. Para esto, en mi caso, se debe incluir la siguiente linea al final de .zshrc:
+
+```
+export PATH=$HOME/.local/bin:$PATH
+```
+
 Se puede testear y verificar que los scripts estén mostrándose y funcionando correctamente antes de incluirlos en el config.h simplemente escribiendo el nombre del script en la terminal:
 
 ![bin](https://cdn.discordapp.com/attachments/1287597164436000898/1297208970066526270/bin-example-2.png?ex=6715177f&is=6713c5ff&hm=077e21277cbdd06228b90a7570d00bdbc2254482f87a5314fa6b429560fa95da&)
 
+
+Para agregar los scripts a dwmblocks, se debe editar el archivo **config.h** que se encuentra dentro de la carpeta de dwmblocks:
+
+![dwmblocks3](https://cdn.discordapp.com/attachments/1287597164436000898/1297212310506569839/dwmblocks-example.png?ex=67151a9b&is=6713c91b&hm=aa3a095511a2d7e8b32be731825e96203662baf7fd6fa8639f0e1e069d9af13c&)
+
+Como se puede ver en la imágen, es bastante intuitivo y muy fácil de setear. 
+
+Finalmente, se debe hacer un ``` sudo make clean install ```. Si los cambios no se muestran, probablemente sea necesario matar el proceso con ```pkill dwmblocks``` y volver a ejecutarlo mediante ```dwmblocks &``` o reiniciando el sistema.
