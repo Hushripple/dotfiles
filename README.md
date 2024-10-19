@@ -30,6 +30,36 @@ Se necesita ``` sudo pacman -S xcompmgr ``` para darle el efecto de transparenci
 
 Ya que utilizo dwm, al final de todo el archivo se debe hacer ```exec dwm```
 
+# .zshrc y ohmyzsh
+
+Utilizo zsh con ![ohmyzsh](https://ohmyz.sh/). Lo más relevante de este archivo es el tema establecido, el export y un alias.
+
+Honestamente me da flojera explicar cómo establecer zsh y ohmyzsh...
+
+
+Establece alanpeabody como tema para zsh
+``` 
+ZSH_THEME="alanpeabody"
+```
+Luego, dentro de **.oh-my-zsh/themes** se puede editar el tema establecido con ``` vim alanpeabody.zsh-theme ``` para una mejor configuración.
+
+Sin embargo, ya que se está utilizando pywal para manejar la colorscheme, esto es irrelevante si se quiere configurar un color en específico.
+
+Lo que sí se puede modificar es el prompt; en mi caso lo tengo así:
+
+``` 
+PROMPT="[${user} ${pwd}]$ "
+```
+
+Necesario para poder encontrar los scripts utilizados en dwmblocks:
+``` 
+export PATH=$HOME/.local/bin:$PATH
+```
+
+Alias para que **ls** muestre los archivos ocultos/dotfiles:
+``` 
+alias ls='ls -a --color=auto'
+```
 
 # dwmblocks y bin
 
