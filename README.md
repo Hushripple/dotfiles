@@ -1,3 +1,10 @@
+# Importante
+
+Mencionar que la gran mayoría de estas configuraciones las realicé gracias a [bugswriter](https://github.com/bugswriter) y a su [ Linux Ricing Crash Course (minimal, simple yet pretty rice for newbies) ](https://www.youtube.com/watch?v=SRqVuAUP2N0)
+con un par de modificaciones pequeñas por mi parte.
+
+Si expliqué algo mal y no funciona como lo especifico, ver el video de bugswritter o buscar sus repos.
+
 # .xinitrc
 ![xinitrc](https://cdn.discordapp.com/attachments/1287597164436000898/1297214782549659658/xinitrc-example.png?ex=67151ce9&is=6713cb69&hm=cbb4910aedd2942a7e0ba66aa229ab0866e38cfe2443d9af986fcbe09a3e0d44&)
 
@@ -131,3 +138,12 @@ static char *font = "JetBrainsMono Nerd Font:pixelsize=15:antialias=true:au
 ``` 
 
 ![vimrc](https://cdn.discordapp.com/attachments/1287597164436000898/1297232391101878282/vimrc-example.png?ex=67152d4f&is=6713dbcf&hm=56472a2345b078ea23d071fda4e380e953ad497105cf7cf822b8f5452e5d51ed&)
+
+# TODO
+
+- Configuraciones de dwm y lo que modifiqué específicamente
+- Verificar que expliqué todo correctamente
+
+![ryoarch](https://cdn.discordapp.com/attachments/1287597164436000898/1297234941670719600/Ryo_Yamada_Reading_ArchLinux_Book.jpg?ex=67152faf&is=6713de2f&hm=ca90b0802582e44e25d46a215033b3cb7594d22df104498797b314cdb22f960a&)
+
+
