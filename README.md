@@ -129,7 +129,7 @@ Todas estas configuraciones fueron sacadas de ![acá](https://www.freecodecamp.o
 
 No hay mucho que decir sobre esto, está comentado (en inglés) lo que hace cada configuración. 
 
-Lo más relevante que podría decir es que utiliza NERDTree con vim dev-icons, y para que estos iconos se vean bien es necesario establecer una fuente que soporte iconos. En mi caso utilizo ![ttf-jetbrains-mono-nerd](https://archlinux.org/packages/extra/any/ttf-jetbrains-mono-nerd/)
+Lo más relevante que podría decir es que utiliza NERDTree con vim dev-icons, y para que estos iconos se vean bien es necesario establecer una fuente que soporte iconos. En mi caso utilizo [ttf-jetbrains-mono-nerd](https://archlinux.org/packages/extra/any/ttf-jetbrains-mono-nerd/)
 
 Para establecer esta fuente, hay que editar el **config.h** de st (la terminal que utilizo) y hacer:
 
