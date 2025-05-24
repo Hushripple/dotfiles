@@ -1,0 +1,40 @@
+configuration {
+    // Fuente
+    font: "JetBrains Mono Nerd Font 13";
+
+    // Color de fondo de la ventana principal (rojo oscuro traslúcido)
+    background: #1a0e0ecc;
+
+    // Color de fondo del listado de opciones (más oscuro)
+    background-alt: #2a1212cc;
+
+    // Color del borde de la ventana
+    border-color: #ff7070;
+
+    // Color del texto normal (rosado claro)
+    text-color: #f2d0d0;
+
+    // Color del texto seleccionado
+    selected-text-color: #1a0e0e;
+
+    // Color del fondo de la opción seleccionada (rojo vibrante)
+    selected-background: #ff7070;
+
+    // Color del borde cuando una opción está seleccionada
+    selected-border-color: #ff5050;
+
+    // Color del prompt y línea de entrada
+    prompt-color: #ff9e9e;
+
+    // Padding interno de los elementos
+    padding: 10px;
+
+    // Radio del borde para redondear
+    border-radius: 12px;
+
+    // Espacio entre líneas (opcional)
+    line-spacing: 2;
+}
+
+
+@theme "/usr/share/rofi/themes/squared-material-red.rasi"

@@ -1,0 +1,21 @@
+[general]
+import = ["~/.config/alacritty/red.toml"]
+
+[font]
+normal = { family = "FiraCode Nerd Font", style = "Regular" }
+size = 11.0
+
+[terminal.shell]
+program = "/bin/zsh"
+
+[window]
+opacity = 0.7
+decorations = "Full"
+
+[window.padding]
+x = 10
+y = 10
+
+[window.dimensions]
+columns = 100
+lines = 23
