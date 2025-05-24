@@ -1,6 +1,11 @@
+local lspconfig = require("lspconfig")
+
+-- Carga defaults (configuración general NvChad)
 require("nvchad.configs.lspconfig").defaults()
 
-local servers = { "html", "cssls" }
-vim.lsp.enable(servers)
+-- Servidores que quieres habilitar:
+local servers = { "html", "cssls", "gopls" }
 
--- read :h vim.lsp.config for changing options of lsp servers 
+for _, server in ipairs(servers) do
+  lspconfig[server].setup({})
+end
